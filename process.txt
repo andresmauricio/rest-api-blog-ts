@@ -1,0 +1,22 @@
+crear proyecto nodejs
+npm init -y 
+
+configuración de typeScript cambio del target es6 a es6 asyc await 
+tsc --init 
+
+configuracion de modulos de aplicación 
+npm i express --framework para el crear backend
+npm i mongoose --conector mongoDb
+npm i morgan --detalle de peticiones consola
+npm i helmet --seguridad
+npm i cors --para aplicaciones cliente
+npm i compression  --mejorar velocidad de respuesta backend
+
+instalacion de types para el desarrollo 
+npm install @types/node @types/mongoose @types/express nodemon typescript -D
+
+script de desarrollo 
+"ts": "tsc -w" compilar typescript y escuchar cambios
+"dev": "nodemon ./build/server.js" correr js en local 
+producción 
+"start": "tsc && node ./build/server.js"
